@@ -19,7 +19,7 @@ baseurl: "/"
 twitter_username: MLResearchPress
 github_username: mlresearch
 markdown: kramdown
-permalink: "/:title.html"
+permalink: "volumes/:volume/:title.html"
 github:
   edit: true
   repository: datasets
