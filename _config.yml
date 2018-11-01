@@ -1,0 +1,36 @@
+---
+booktitle: Datasets of Machine Learning Research
+shortname: DMLR
+url: http://datasets.mlr.press
+location: Worcester, USA
+series: Datasets of Machine Learning Research
+cycles: false
+editor:
+- given: Neil D.
+  family: Lawrence
+title: Datasets of Machine Learning Research
+description: |
+  Electronic Proceedings of Datasets of Machine Learning Research. 
+
+
+  Edited by:
+    Neil D. Lawrence
+baseurl: "/"
+twitter_username: MLResearchPress
+github_username: mlresearch
+markdown: kramdown
+permalink: "/:title.html"
+github:
+  edit: true
+  repository: datasets
+display:
+  copy_button:
+    bibtex: true
+    endnote: true
+    apa: true
+  comments: false
+email: ''
+analytics:
+  google:
+    tracking_id: UA-92432422-1
+# Site settings

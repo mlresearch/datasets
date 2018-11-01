@@ -1,0 +1,16 @@
+<div class="paper">
+  <p class="title">{{ post.title }}</p>
+  <p class="details">
+    <span class="authors">
+      {% assign lastone = post.author | last %}
+      {% for person in post.author %}
+      {% include listperson.html %}
+      {% endfor %}
+    </span>;
+    <span class="info">DMLR {% if post.volume %}{{ post.volume}}{%endif%}{% if post.number %}({{post.number}}){%endif%}:{% if post.firstpage %}{{ post.firstpage }}{% endif %}{% if post.lastpage %}-{{ post.lastpage }}{% endif %}</span>
+  </p>
+  <p class="links">
+    [<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">abs</a>]
+    {% for extra in post.extras %}[<a href="{{ extra.link }}" target="_blank" onclick="ga('send', 'event', 'Extra Downloads', 'Download', '{{ extra.label }}', 12);">{{ extra.label }}</a>]{% endfor %}
+  </p>
+</div>
